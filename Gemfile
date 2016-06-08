@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Added below line as per lesson2 firehose
+gem 'rails_12factor', group: :production
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
