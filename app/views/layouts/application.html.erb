@@ -28,7 +28,19 @@
 </header>
 <hr/>
 <br class="clear"/>
-<%= yield %>
-
+<div class="container">	
+	<%= yield %>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="col-xs-6">
+			<%= link_to "This isn't enough, I am greedy for more", "#" , class: 'next-quote' %>
+		</div>
+		<div class="col-xs-6 footer-blurb">
+			Proudly joined The Firehose Project <a href="http://www.thefirehoseproject.com"><i>Firehose</i></a>
+			Built the Splurty App with ease and fun <a href="http://www.thefirehoseproject.com"><i>Learn how to code here</i></a>
+		</div>
+	</div>
+</div>
 </body>
 </html>
