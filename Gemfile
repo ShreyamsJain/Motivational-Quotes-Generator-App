@@ -5,6 +5,9 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
 gem 'sass-rails'
 
+#Adding simple form gem
+gem 'simple_form'
+
 # Added below line as per lesson2 firehose
 gem 'rails_12factor', group: :production
 
