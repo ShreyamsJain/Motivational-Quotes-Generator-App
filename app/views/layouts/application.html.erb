@@ -20,12 +20,13 @@
 		</div>
 		<% end %>
 	</div>
-	<div class="col-xs-4 slogan">
+	<div class="col-xs-4 hidden-xs slogan">
 		Splurting out unsolicited advice about entreprenuership since 2016
 	</div>
-	<div class="col-xs-5 links">
+	<div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
 		<!-- Button trigger modal -->
   	<%= link_to 'Contribute', '#', data: { toggle:"modal", target:"#myModal"} %>
+  	&nbsp;&nbsp;
 		<%= link_to 'About', about_path %>
 	</div>
 </header>
@@ -40,8 +41,9 @@
         </div>
         <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">
-						<%= f.input :saying %>
-						<%= f.input :author %>
+						<%= f.input :saying , label:"What is the saying you want to add?", placeholder: "If you dream it, you can do it" %>
+						<br/>
+						<%= f.input :author , label:"Who is the author of the quote?", placeholder: 'Walt Disney' %>
 						<br/>
         </div>
         <div class="modal-footer">
@@ -64,12 +66,12 @@
 </div>
 <div class="footer">
 	<div class="container">
-		<div class="col-xs-6">
+		<div class="col-xs-12 col-sm-6">
 			<%= link_to "This isn't enough, I am greedy for more", root_path , class: 'next-quote' %>
 		</div>
-		<div class="col-xs-6 footer-blurb">
-			Proudly joined The Firehose Project <a href="http://www.thefirehoseproject.com"><i>Firehose</i></a>
-			Built the Splurty App with ease and fun <a href="http://www.thefirehoseproject.com"><i>Learn how to code here</i></a>
+		<div class="col-xs-12 col-sm-6 footer-blurb">
+			Built the app with ease and fun, <a href="https://shreyamsjain.github.io"><i>Shreyams</i></a>
+			Feel free to contribute your favourite quotes<a href="https://github.com/ShreyamsJain"><i>Find my contribution here</i></a>
 		</div>
 	</div>
 </div>
